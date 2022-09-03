@@ -2,6 +2,8 @@ include("main.jl")
 using Test, Random
 using .SudokuSolver: fillMissingDigit
 
+println("⌛ Running tests...")
+
 for i in 1:1000
     # it fills when one digit is empty
     correct = shuffle(1:9)
